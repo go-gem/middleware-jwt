@@ -1,0 +1,12 @@
+language: go
+
+go:
+  - master
+
+before_install:
+  - go get github.com/dgrijalva/jwt-go
+  - go get github.com/go-gem/gem
+  - go get github.com/mattn/goveralls
+
+script:
+  - $HOME/gopath/bin/goveralls -service=travis-ci
