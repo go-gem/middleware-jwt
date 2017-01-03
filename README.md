@@ -14,7 +14,9 @@ JSON WEB TOKEN authentication middleware for [Gem](https://github.com/go-gem/gem
 $ go get -u github.com/go-gem/middleware-jwt
 ```
 
-Example
+**Example**
+
+This package requires jwt package: https://github.com/dgrijalva/jwt-go.
 
 ```
 package main
@@ -32,7 +34,7 @@ import (
 var form = `
     <html>
     <head>
-    <title>Sign Up!</title>
+    <title>JSON WEB TOKEN</title>
     </head>
     <body>
     <p><a href="/posts" target="_blank">POSTS LIST</a></p>
